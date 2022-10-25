@@ -3,21 +3,34 @@ body{
     padding: 0%;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: rgba(128, 128, 128, 0.232);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* position: fixed; */
 }
 .nav{
     width: 100%;
     height: 80px;
     background-color: #FBF3E4;
+    /* position: fixed;
+    z-index: 12; */
 }
 .logo{
     width: 35%;
     font-size: 2rem;
     color: rgb(42, 101, 42);
     margin-left: 10%;
-    font-weight: 1000;
+    font-weight: bolder;
     margin-top: 15px;
     display: inline-block;
+    font-family: 'Kanit', sans-serif;
+}
+.banner{
+    /* background-color: rgb(42, 101, 42) ; */
+    height: 650px;
+    width: 700px;
+    margin-top: 25px;
+    border-radius: 0px 50%;
+    opacity: 50%;
+    position: relative;
 }
 #sideMenu{
     margin-right: 5%;
@@ -36,7 +49,8 @@ body{
     text-decoration: none;
 }
 #sideMenu .menu li a:hover{
-    color: rgb(99, 2, 255);
+    color: rgb(255, 78, 2);
+   
 }
 .con1{
     background-color: #105652;
@@ -66,10 +80,14 @@ body{
     border: none;
     margin-bottom: 80px;
     color :#FBF3E4;
+    text-decoration: none;
     font-size: 1.2rem;
     box-shadow: 0px 16px 29px #0BBEAD69;
     background-color: #09BEAD;
     cursor: pointer;
+}
+.button1:hover{
+    transform: scale(1.1,1.1);
 }
 .button2{
     width: 30%;
@@ -79,11 +97,28 @@ body{
     margin-bottom: 80px;
     margin-left: 60px;
     color :#FBF3E4;
+    text-decoration: none;
     font-size: 1.2rem;
     cursor: pointer;
     background-color: #FCA738;
-    box-shadow: 0px 16px 28px #F57F1769;
+    box-shadow: 0px 16px 28px #F57F1769;   
+}
+.button2:hover{
+    transform: scale(1.1,1.1);
+}
+.b2{
     
+    color :#FBF3E4;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+#resumeDownload {
+    font-size: 16px;
+    padding-top: 10px;
+    color: rgb(9, 9, 9);
+    z-index: 5;
+    font-weight: bolder;
 }
 .rightside{
     width: 30%;
@@ -197,18 +232,24 @@ h4{
     padding-bottom: 15px;
     font-weight: 800;
     border-bottom: 8px solid #FCA738;
+   
 }
 #port{
-    width: 100%;
+    width: 90%;
     margin: 50px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* border: 2px solid black; */
     
 }
 .items{
     padding-left: 10px;
     cursor: pointer;
+    margin: 10px;
+}
+.img8{
+    border-radius: 15px;
 }
 .img8:hover{
     transform: scale(1.1,1.1);
@@ -242,6 +283,14 @@ h4{
     width: 100%;
     position: relative;
 }
+.edu{
+    margin-top: 120px; 
+}
+.box2{ 
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
 .p3{
     width: 92%;
     height: 100px;
@@ -259,7 +308,7 @@ h4{
 .p3 > p{
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 .year-btn{
     width: 20%;
@@ -322,6 +371,9 @@ h4{
 .items2{
     padding: 15px;
 }
+.items2:hover{
+    transform: scale(1.1,1.1); 
+}
 .p11{
     width: fit-content;
     text-align: center;
@@ -351,7 +403,7 @@ h4{
 .view{
     width: 100%;
     height: 80px;
-    margin-top: 60px;
+    margin-top: 80px;
     background-color: rgb(55, 196, 252);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -365,20 +417,22 @@ h4{
     box-shadow: 5px 15px 15px grey;
     background-color: #FBF3E4;
     margin-bottom: 200px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .contact-left{
     width: 50%;
-    height:850px;
+    height:800px;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
     box-sizing: border-box;
     padding: 70px;   
     color: #000;
     font-size:1.2rem;
+    font-weight: bold;
     display: inline-block;
     position: relative;
-    top: -184px;
+    top: -135px;
+    /* border: 2px solid black; */
     background-color: #FFFFFF;
 }
 .contact-left > h3{
@@ -410,7 +464,7 @@ label{
 }
 .inpp{
     width: 80%;
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.2rem;
     border-radius: 5px;
     border: none;
@@ -418,6 +472,9 @@ label{
 }
 textarea{
     resize: none;
+}
+label{
+    font-weight: bolder;
 }
 .button{
     width: 30%;
@@ -431,16 +488,30 @@ textarea{
     background-color: #FCA738;
     box-shadow: 0px 16px 28px #F57F1769;
 }
+.btn{
+    width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    color :#FBF3E4;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #ff4304;
+    box-shadow: 0px 16px 28px #F57F1769; 
+}
 #footer{
     width: 100%;
     height: 80px;
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #FBF3E4;
-    font-size: 1.7rem;
-    line-height: 80px;
+    /* font-size: 1.7rem;
+    line-height: 80px; */
     text-align: center;
     color: #000;
-    font-weight: 400;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
 .resumeleft h2 {
     font-size: 2rem;
